@@ -1,0 +1,21 @@
+
+module tb_logic_gates(    );
+
+reg a;
+reg b;
+wire  xor1,xnor1,and1,or1,nand1,nor1,not1;
+
+Logic_Gates dut( a,b ,xor1,xnor1,and1,or1,nand1,nor1,not1 );
+
+initial 
+
+begin
+          #10  a=0;b=0;
+          #10 a=0;b=1;
+          #10 a=1;b=0;
+          #10 a=1;b=1;
+end
+
+
+
+endmodule
